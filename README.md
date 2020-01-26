@@ -1,5 +1,5 @@
 # babaismu
-Baba is You demake for the CASIO fx-9750GII written entirely in BASIC.
+This is a Baba is You demake for the CASIO fx-9750GII written entirely in BASIC.
 
 # how to download
 First get this from CASIO's website: [https://edu.casio.com/education/support_software/dl/PC_links/fa124_inst_204_2.zip](https://edu.casio.com/education/support_software/dl/PC_links/fa124_inst_204_2.zip)
