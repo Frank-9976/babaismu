@@ -20,8 +20,8 @@ If you just have a blank matrix (all 0s) for Mat C then the level will be empty,
 31 - YOU - fancy u with a dot over it  
 32 - WIN - fancy w  
 33 - PUSH - fancy p  
-Important changes: everything is de facto STOP because there is no stacking in this demake. You can win either by having an object be both WIN and YOU or by having a YOU object try to move into a WIN object. If you do not follow these instructions, demons may fly out of your nose and give you an error.
-Also note that pushing is recursive and runs out of stack space at around ten objects. The game will purposely error because I thought it would be funnier that way.
+Important changes: everything is de facto STOP because there is no stacking in this demake. You can win either by having an object be both WIN and YOU or by having a YOU object try to move into a WIN object. If you do not follow these instructions, demons may fly out of your nose and give you an error.  
+Also note that pushing is recursive and runs out of stack space at around ten objects. The game will purposely error because I thought it would be funnier that way. Transmutation works but not an X = X statement to prevent it, and transmutation is done in place, unlike with the og game.
 
 # premade levels
 I have made some premade levels which I have put in the levels folder (not yet as of now, pretend this is in future tense). They are in the CSV format and can be converted to a 7x18 matrix via the program linked above. Simply copy them to Mat C to enjoy a nice laggy puzzle.
