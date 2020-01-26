@@ -1,2 +1,2 @@
 # babaismu
-Baba is You for the CASIO fx-9750GII written entirely in BASIC.
+Baba is You demake for the CASIO fx-9750GII written entirely in BASIC.
