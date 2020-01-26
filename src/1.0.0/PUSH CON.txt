@@ -1,0 +1,6 @@
+Filename:PUSH CON
+Mat D[Z,1]„UŸ
+Mat D[Z,2]„VŸ
+Mat D[Z,3]„WŸ
+List 2[U]+V„XŸ
+List 3[U]+W„Y

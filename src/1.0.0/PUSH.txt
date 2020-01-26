@@ -1,0 +1,47 @@
+Filename:PUSH
+'index,+x,+yãU,V,WÙ
+Prog "PUSH CON"Ù
+0ãMat D[Z,4]Ù
+X>18×ReturnÙ
+XÉ0×ReturnÙ
+Y>7×ReturnÙ
+YÉ0×ReturnÙ
+Mat A[Y,X]ãOÙ
+O=0×Goto YÙ
+If OÉ10Ù
+Then For 1ãK To MÙ
+List 4[K]ÈO+10×NextÙ
+List 5[K]È21×NextÙ
+List 6[K]=32 And Z=1×Prog "WIN"Ù
+List 6[K]È33×NextÙ
+Goto PÙ
+NextÙ
+0ãMat D[Z,4]Ù
+ReturnÙ
+IfEndÙ
+If OÊ11Ù
+Then 2ãMat D[Z,4]Ù
+Lbl PÙ
+Z+1ãZÙ
+Mat B[Y,X]ãMat D[Z,1]Ù
+Mat D[Z-1,2]ãMat D[Z,2]Ù
+Mat D[Z-1,3]ãMat D[Z,3]Ù
+Prog "PUSH"Ù
+Z-1ãZÙ
+If Mat D[Z+1,4]=0Ù
+Then 0ãMat D[Z,4]Ù
+ReturnÙ
+IfEndÙ
+Mat D[Z+1,4]=2×2ãMat D[Z,4]Ù
+Prog "PUSH CON"Ù
+IfEndÙ
+Lbl YÙ
+Mat A[Y-W,X-V]ãMat A[Y,X]Ù
+Locate X,Y,StrMid(Str 1,Mat A[Y,X],1)Ù
+0ãMat A[Y-W,X-V]Ù
+0ãMat B[Y-W,X-V]Ù
+Locate X-V,Y-W," "Ù
+XãList 2[U]Ù
+YãList 3[U]Ù
+UãMat B[Y,X]Ù
+Mat D[Z,4]=0×1ãMat D[Z,4]

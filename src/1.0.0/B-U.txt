@@ -1,0 +1,78 @@
+Filename:B-U
+'TILESET BY 10sู
+"BFRWบบบบู
+บ@E742@E746@E752@E757บบบบู
+บ=#E6BEบบบบบบู
+บ#E631#E679#E671"ใStr 1ู
+'STACK, LIMIT 10ู
+{10,4}ใDim Mat Dู
+'TRANS OPTIMIZERู
+'1ใTRANS, 2ใREPARSEู
+1ใTู
+For 1ใI To 3ู
+1ใDim List Iู
+Nextู
+'INIT DRAW/Mat Cใู
+Mat CใMat Aู
+{7,18}ใDim Mat Bู
+1ใLู
+For 1ใI To 18ู
+For 1ใJ To 7ู
+If Mat A[J,I]ู
+Then Mat A[J,I]ใList 1[L]ู
+IใList 2[L]ู
+JใList 3[L]ู
+LใMat B[J,I]ู
+Locate List 2[L],List 3[L],StrMid(Str 1,List 1[L],1)ู
+L+1ใLู
+IfEndู
+Nextู
+Nextู
+L-1ใLู
+Prog "PARSE"ู
+'INPUT LOOPู
+Lbl Iู
+Doู
+GetkeyใGู
+0ใAู
+0ใBู
+G=62ื1ใBู
+G=64ืบ1ใBู
+G=53ื1ใAู
+G=73ืบ1ใAู
+LpWhile Gศ63 And Gศ62 And Gศ64 And Gศ53 And Gศ73ู
+'UPDATE YOUู
+For 1ใI To Mู
+List 4[I]=0ืNextู
+List 5[I]ศ21ืNextู
+List 6[I]ศ31ืNextู
+For 1ใJ To Lู
+List 1[J]ศList 4[I]-10ืNextู
+1ใZู
+JใMat D[Z,1]ู
+AใMat D[Z,2]ู
+BใMat D[Z,3]ู
+Prog "PUSH"ู
+Zศ1ืStop 'ASSERTIONู
+Mat D[1,4]=2ื2ใTู
+Nextู
+Nextู
+T=2ืProg "PARSE"ู
+'TRANSMUTEู
+If Tู
+Then 0ใTู
+For 1ใI To Mู
+List 4[I]=0ืNextู
+List 5[I]ศ21ืNextู
+List 6[I]ส21ืNextู
+List 4[I]-10ใOู
+For 1ใJ To Lู
+List 1[J]ศOืNextู
+1ใTู
+List 6[I]-10ใList 1[J]ู
+List 6[I]-10ใMat A[List 3[J],List 2[J]]ู
+Locate List 2[J],List 3[J],StrMid(Str 1,List 1[J],1)ู
+Nextู
+Nextู
+IfEndู
+Goto I

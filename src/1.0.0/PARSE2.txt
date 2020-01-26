@@ -1,0 +1,7 @@
+Filename:PARSE2
+If M…7Ÿ
+Then Locate 19,M,StrMid(Str 1,List 4[M],1)Ÿ
+Locate 20,M,StrMid(Str 1,List 5[M],1)Ÿ
+Locate 21,M,StrMid(Str 1,List 6[M],1)Ÿ
+IfEndŸ
+M+1„M

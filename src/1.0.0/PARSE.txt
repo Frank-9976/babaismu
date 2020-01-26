@@ -1,0 +1,32 @@
+Filename:PARSE
+1„MŸ
+For 4„K To 6Ÿ
+1„Dim List KŸ
+NextŸ
+For 1„K To 7Ÿ
+Locate 19,K,"   "Ÿ
+NextŸ
+For 1„K To LŸ
+If List 1[K] 11 And List 1[K]…20Ÿ
+Then List 2[K]„XŸ
+List 3[K]„YŸ
+0„FŸ
+If X…16Ÿ
+Then If Mat A[Y,X+1] 21 And Mat A[Y,X+1]…30 And (Mat A[Y,X+2] 31 Or (Mat A[Y,X+2] 11 And Mat A[Y,X+2]…20))Ÿ
+Then List 1[K]„List 4[M]Ÿ
+Mat A[Y,X+1]„List 5[M]Ÿ
+Mat A[Y,X+2]„List 6[M]Ÿ
+Prog "PARSE2"Ÿ
+IfEndŸ
+IfEndŸ
+If Y…5Ÿ
+Then If Mat A[Y+1,X] 21 And Mat A[Y+1,X]…30 And (Mat A[Y+2,X] 31 Or (Mat A[Y+2,X] 11 And Mat A[Y+2,X]…20))Ÿ
+Then List 1[K]„List 4[M]Ÿ
+Mat A[Y+1,X]„List 5[M]Ÿ
+Mat A[Y+2,X]„List 6[M]Ÿ
+Prog "PARSE2"Ÿ
+IfEndŸ
+IfEndŸ
+IfEndŸ
+NextŸ
+M-1„M

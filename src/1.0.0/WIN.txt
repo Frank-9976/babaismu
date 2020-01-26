@@ -1,0 +1,13 @@
+Filename:WIN
+Lbl WŸ
+Locate 19,1,"WIN"Ÿ
+For 1„O To 100Ÿ
+NextŸ
+For 2„I To 7Ÿ
+Locate 19,I-1,"   "Ÿ
+Locate 19,I,"WIN"Ÿ
+For 1„O To 100Ÿ
+NextŸ
+NextŸ
+Locate 19,7,"   "Ÿ
+Goto W
